@@ -54,8 +54,8 @@ public class VariablesDataTypes {
         String fullName = name + " " + surName;
         System.out.println(fullName);
 
-        String fullNameWithAge = fullName + myCurrentAge;
-        //System.out.println("");
+        String fullNameWithAge = fullName + " " + myCurrentAge;
+        System.out.println(fullNameWithAge);
 
         System.out.printf("My full name is: %s. I am %d years old.%n", fullName, myCurrentAge);
         System.out.printf("My full name is: %s. I am %d years old.%n", fullName, myCurrentAge);
