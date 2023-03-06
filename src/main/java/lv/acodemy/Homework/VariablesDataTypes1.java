@@ -10,7 +10,7 @@ public class VariablesDataTypes1 {
         byte mortgageYears = 20;
         short monthlySalary = 1300;
         short currentYear = 2023;
-        short BirthYear = 1993;
+        short birthYear = 1993;
         short cursePrice = 600;
         int flatsPrice = 73000;
         int downPayment = 10000;
@@ -23,11 +23,11 @@ public class VariablesDataTypes1 {
         float endCurseDate = 11.04f;
         double currencyEuroPound = 0.88;
         double mortgageAnnualPercentage = 1.9;//%
-        boolean IsApproved = true;
-        boolean IsDenial = false;
-        boolean lastIosVersion = true;
+        boolean isApproved = true;
+        boolean isDenial = false;
+        boolean isLastIOsVersion = true;
         if (iosVersion == 16.3f) {
-            System.out.println(lastIosVersion);
+            System.out.println(isLastIOsVersion);
             System.out.print("\n\n");
         }
         String name = "Oleg";
@@ -39,7 +39,7 @@ public class VariablesDataTypes1 {
         System.out.printf("I went on %c%c curses for %d euro and will receive a certificate on %.2f date.\n\n", letter, letter2, cursePrice, endCurseDate);
 
 
-        int age = currentYear - BirthYear;
+        int age = currentYear - birthYear;
         System.out.println(age + mortgageYears);
         double mortgageAmount = flatsPrice - downPayment;
         double mortgageMonthlyPercentage = mortgageAnnualPercentage / 12 / 100;
@@ -48,10 +48,10 @@ public class VariablesDataTypes1 {
         double monthlyPayment = (mortgageAmount * mortgageMonthlyPercentage * totalPercentage) / (totalPercentage - 1);
         System.out.println(monthlyPayment);
         if (age+mortgageYears < 65 & monthlySalary-monthlyPayment > 900) {
-            System.out.println(IsApproved);
+            System.out.println(isApproved);
         }
         if (age+mortgageYears > 65 | monthlySalary-monthlyPayment < 900) {
-                System.out.println(IsDenial);
+                System.out.println(isDenial);
             }
 
     }
