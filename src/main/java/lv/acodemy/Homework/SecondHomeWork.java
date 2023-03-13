@@ -2,13 +2,13 @@ package lv.acodemy.Homework;
 
 public class SecondHomeWork {
     public static void main(String[] args) {
-        String[] EuropeanCountries = {"Latvia", "Poland", "France", "Germany", "Portugal", "Lithuania", "Estonia",
+        String[] europeanCountries = {"Latvia", "Poland", "France", "Germany", "Portugal", "Lithuania", "Estonia",
                 "Italy", "Greece", "Spain"};
-        for (int i = 0; i < EuropeanCountries.length; i++) {
-            System.out.print(EuropeanCountries[i] + " ");
+        for (int i = 0; i < europeanCountries.length; i++) {
+            System.out.print(europeanCountries[i] + " ");
         }
-        for (int i = 0; i < EuropeanCountries.length; i++) {
-            if (EuropeanCountries[i].equals("Latvia"))
+        for (int i = 0; i < europeanCountries.length; i++) {
+            if (europeanCountries[i].equals("Latvia"))
                 System.out.println("\nLatvia is my motherland");
         }
         String[] Sentence = {"Sometimes", "it", "pays", "to", "stay", "in", "bed", "on", "Monday,", "rather", "than",
@@ -27,11 +27,13 @@ public class SecondHomeWork {
         } else {
             System.out.println("Your salary is high.");
         }
-        int number = 0;
+        int number = 1;
         if (number > 0) {
             System.out.println("The number is positive.");
         } else if (number < 0) {
             System.out.println("The number is negative.");
-        } else System.out.println("The number is zero.");
+        } else {
+            System.out.println("The number is zero.");
+        }
     }
 }
