@@ -17,12 +17,12 @@ public class SecondHomeWork {
             System.out.print(Sentence[i] + " ");
         }
         System.out.println();
-        double Salary = 1300;
-        if (Salary < 0) {
-            throw new IllegalStateException("Unexpected value " + Salary);
-        } else if (Salary >= 0 && Salary <= 5000) {
+        double salary = 1300;
+        if (salary < 0) {
+            throw new IllegalStateException("Unexpected value " + salary);
+        } else if (salary >= 0 && salary <= 5000) {
             System.out.println("Your salary is low.");
-        } else if (Salary > 5000 && Salary <= 10000) {
+        } else if (salary > 5000 && salary <= 10000) {
             System.out.println("Your salary is average.");
         } else {
             System.out.println("Your salary is high.");
