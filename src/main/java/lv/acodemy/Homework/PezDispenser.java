@@ -25,61 +25,65 @@ public class PezDispenser {
     }
 
 
-int candyCapacity = 12;
+    int candyCount = 12;
+    int candyCapacity = 12;
+
     public void takeOne() {
-        if (candyCapacity == 0) {
+        if (candyCount == 0) {
             System.out.println("Dispenser is empty!");
         } else {
-            candyCapacity--;
+            candyCount--;
             System.out.println("You took one candy.");
         }
     }
 
     public void takeMany(int v) {
-        if (candyCapacity == 0) {
+        if (candyCount == 0) {
             System.out.println("Dispenser is empty!");
-        } else if (candyCapacity < v) {
+        } else if (candyCount < v) {
             System.out.println("Not enough candies in dispenser!");
-        } else if (v < 13) {
-            candyCapacity -= v;
+        } else if (v <= candyCapacity) {
+            candyCount -= v;
             System.out.println("You took " + v + " candies.");
         }
     }
+
     public void takeAll() {
-        if (candyCapacity == 0) {
+        if (candyCount == 0) {
             System.out.println("Dispenser is empty!");
         } else {
-            candyCapacity-=candyCapacity;
+            candyCount -= candyCount;
             System.out.println("You took all the candies.");
         }
     }
+
     public void putOne() {
-        if (candyCapacity == 12) {
+        if (candyCount == candyCapacity) {
             System.out.println("Dispenser is full!");
         } else {
-            candyCapacity++;
+            candyCount++;
             System.out.println("You put one candy.");
         }
     }
 
     public void putMany(int v) {
-        if (candyCapacity == 12) {
+        if (candyCount == candyCapacity) {
             System.out.println("Dispenser is full!");
-        } else if (12-candyCapacity < v) {
+        } else if (candyCapacity - candyCount < v) {
             System.out.println("Not enough free space in dispenser!");
-        } else if (v < 13) {
-            candyCapacity += v;
+        } else if (v <= candyCapacity) {
+            candyCount += v;
             System.out.println("You put " + v + " candies.");
         }
     }
+
     public void putAll() {
-        if (candyCapacity == 12) {
+        if (candyCount == candyCapacity) {
             System.out.println("Dispenser is full!");
         } else {
-            candyCapacity=12;
-            System.out.println("Dispenser is now full.");
+            int b = candyCapacity - candyCount;
+            candyCount = candyCount + b;
+            System.out.println("You put " + b + " candies. Dispenser is now full.");
         }
     }
-
-
 }

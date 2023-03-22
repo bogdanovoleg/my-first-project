@@ -5,7 +5,7 @@ public class PezDispenserObject {
 
 
     PezDispenser bugsBunny = new PezDispenser("Looney Tunes","Bugs Bunny","Red");
-        System.out.println(bugsBunny.candyCapacity);
+        System.out.println(bugsBunny.candyCount);
         bugsBunny.takeAll();
         bugsBunny.takeAll();
 
@@ -20,11 +20,24 @@ public class PezDispenserObject {
 
         bugsBunny.putMany(6);
         bugsBunny.putMany(7);
+        System.out.println(bugsBunny.candyCount);
         bugsBunny.putAll();
+        System.out.println(bugsBunny.candyCount);
         bugsBunny.putMany(3);
         bugsBunny.putOne();
         bugsBunny.takeOne();
         bugsBunny.putMany(3);
-        System.out.println(bugsBunny.candyCapacity);
-}}
+        System.out.println(bugsBunny.candyCount);
+        bugsBunny.takeMany(4);
+        System.out.println(bugsBunny.candyCount);
+        System.out.println("\nSuperman");
+        PezDispenser superman = new PezDispenser("DC","Superman","Blue");
+        System.out.println(superman.candyCount);
+        superman.takeAll();
+        System.out.println(superman.candyCount);
+        System.out.println(bugsBunny.candyCount);
+
+}
+}
+
 
