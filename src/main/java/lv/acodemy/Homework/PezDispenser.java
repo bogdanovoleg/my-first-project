@@ -26,7 +26,7 @@ public class PezDispenser {
 
 
     int candyCount = 12;
-    int candyCapacity = 12;
+    final int candyCapacity = 12;
 
     public void takeOne() {
         if (candyCount == 0) {
